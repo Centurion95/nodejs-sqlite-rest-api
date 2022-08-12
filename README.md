@@ -28,9 +28,21 @@ npm start
 npm run dev
 ```
 
+## Instrucciones de uso
+- Al ejecutar el proyecto, se crea automaticamente la BD "my_sqlite.db" en la carpeta raíz
+- Tambien se crean las tablas "usuarios" y "notas", insertándose datos de ejemplo
+- Importar a postman los archivos ".postman_collection" y ".postman_environment" de la carpeta raiz
+- Ejecutar los requests para verificar la funcionalidad
 
 
 ## Acerca de
+rc95 - 12/08/2022 00:09
+- Reestructuración de carpetas, separación de funcionalidades
+- Se agregan a la carpeta raíz:
+    - .postman_collection
+    - .postman_environment
+- Cambios en el readme
+
 rc95 - 11/08/2022 03:22
 - Primera versión del proyecto
 - Se agrega .gitignore

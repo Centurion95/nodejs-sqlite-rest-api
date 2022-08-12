@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "node-fetch": "^2.6.7",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.0.11"
   },
