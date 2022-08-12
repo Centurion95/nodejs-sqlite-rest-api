@@ -102,6 +102,122 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "updateUser_by_id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"MODIFICADO\",\n    \"email\": \"MODIF@MODIF.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/usuarios/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser_by_id_no_ok",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"MODIFICADO\",\n    \"email\": \"MODIF@MODIF.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/usuarios/999999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser_by_id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/usuarios/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser_by_id_no_ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/usuarios/999999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"999999"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -163,6 +279,178 @@
 								"notas",
 								"del_usuario",
 								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_usuario\": \"1\",\n    \"titulo\": \"ejemplo de nota\",\n    \"cuerpo\": \"lorem ipsum dolorem, lorem ipsum dolorem\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPost_no_ok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\": \"ejemplo de nota\",\n    \"cuerpo\": \"lorem ipsum dolorem, lorem ipsum dolorem\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost_by_id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_usuario\": \"2\",\n    \"titulo\": \"cambiadooo\",\n    \"cuerpo\": \"actualizado actualizado actualizado actualizado \"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost_by_id_no_ok",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_usuario\": \"2\",\n    \"titulo\": \"cambiadooo\",\n    \"cuerpo\": \"actualizado actualizado actualizado actualizado \"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas/9999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas",
+								"9999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost_by_id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost_by_id_no_ok",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/notas/999999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notas",
+								"999999"
 							]
 						}
 					},

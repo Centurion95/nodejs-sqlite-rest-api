@@ -5,7 +5,7 @@ const app = express()
 // JSON Middleware
 app.use(express.json());
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 // Import products routes
 const usuariosRouter = require('./routes/usuariosRoutes')

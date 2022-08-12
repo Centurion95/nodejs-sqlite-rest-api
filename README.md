@@ -36,6 +36,10 @@ npm run dev
 
 
 ## Acerca de
+rc95 - 12/08/2022 01:01
+- Se terminan los GET / POST / PATCH / DELETE
+- Se actualizan los ".postman_collection" y ".postman_environment"
+
 rc95 - 12/08/2022 00:09
 - Reestructuración de carpetas, separación de funcionalidades
 - Se agregan a la carpeta raíz:
